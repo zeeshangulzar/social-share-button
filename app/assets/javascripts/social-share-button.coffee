@@ -18,6 +18,7 @@ window.SocialShareButton =
     url = encodeURIComponent($parent.getAttribute("data-url") || '')
     via = encodeURIComponent($parent.getAttribute("data-via") || '')
     desc = encodeURIComponent($parent.getAttribute("data-desc") || ' ')
+    rand = Math.floor(Math.random() * 10100001);
 
     # tracking click events if google analytics enabled
     ga = window[window['GoogleAnalyticsObject'] || 'ga']
@@ -49,7 +50,7 @@ window.SocialShareButton =
       when "pinterest"
         SocialShareButton.openUrl("http://www.pinterest.com/pin/create/button/?url=#{url}&media=#{img}&description=#{title}")
       when "linkedin"
-        SocialShareButton.openUrl("https://www.linkedin.com/shareArticle?mini=true&url=#{url}&title=#{title}&summary=#{desc}")
+        SocialShareButton.openUrl("https://www.linkedin.com/shareArticle?mini=true&url=#{url}&title=#{title}&summary=#{desc}?#{rand}")
       when "xing"
         SocialShareButton.openUrl("https://www.xing.com/spi/shares/new?url=#{url}")
       when "vkontakte"

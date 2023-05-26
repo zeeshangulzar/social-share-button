@@ -50,7 +50,7 @@ window.SocialShareButton =
       when "pinterest"
         SocialShareButton.openUrl("http://www.pinterest.com/pin/create/button/?url=#{url}&media=#{img}&description=#{title}")
       when "linkedin"
-        SocialShareButton.openUrl("https://www.linkedin.com/shareArticle?mini=true&url=#{url}&title=#{title}&summary=#{desc}?#{rand}")
+        SocialShareButton.openUrl("https://www.linkedin.com/sharing/share-offsite/?url=#{url}?#{rand}")
       when "xing"
         SocialShareButton.openUrl("https://www.xing.com/spi/shares/new?url=#{url}")
       when "vkontakte"

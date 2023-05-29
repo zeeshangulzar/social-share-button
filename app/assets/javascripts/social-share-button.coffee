@@ -50,7 +50,7 @@ window.SocialShareButton =
       when "pinterest"
         SocialShareButton.openUrl("http://www.pinterest.com/pin/create/button/?url=#{url}&media=#{img}&description=#{title}")
       when "buffer"
-        SocialShareButton.openUrl("https://publish.buffer.com/compose?url=#{url}&media=#{img}&description=#{title}")
+        SocialShareButton.openUrl("https://publish.buffer.com/compose?url=#{url}&picture=#{img}&description=#{title}", 740, 540)
       when "linkedin"
         SocialShareButton.openUrl("https://www.linkedin.com/sharing/share-offsite/?url=#{url}?#{rand}")
       when "xing"
